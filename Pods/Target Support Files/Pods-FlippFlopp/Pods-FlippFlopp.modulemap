@@ -1,0 +1,6 @@
+framework module Pods_FlippFlopp {
+  umbrella header "Pods-FlippFlopp-umbrella.h"
+
+  export *
+  module * { export * }
+}

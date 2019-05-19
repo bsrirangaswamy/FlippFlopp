@@ -15,6 +15,9 @@
 		2DEBBC632291BFEC00E315EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DEBBC612291BFEC00E315EA /* LaunchScreen.storyboard */; };
 		2DEBBC6E2291BFEC00E315EA /* FlippFloppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBBC6D2291BFEC00E315EA /* FlippFloppTests.swift */; };
 		2DEBBC792291BFEC00E315EA /* FlippFloppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBBC782291BFEC00E315EA /* FlippFloppUITests.swift */; };
+		9F8846E2F69BB9B3E820BC34 /* Pods_FlippFloppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91A990A1428510EA9591E12 /* Pods_FlippFloppTests.framework */; };
+		C4E187E137E39B2C1CD04D33 /* Pods_FlippFloppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB20B1D17814D6BA539A12D0 /* Pods_FlippFloppUITests.framework */; };
+		FEEF7CB2CA947F9D4D7419AE /* Pods_FlippFlopp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0638BB62E90EE157B814745 /* Pods_FlippFlopp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1558E3BA854B86EC2C537250 /* Pods-FlippFloppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlippFloppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlippFloppUITests/Pods-FlippFloppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2DEBBC522291BFEB00E315EA /* FlippFlopp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlippFlopp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEBBC552291BFEB00E315EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DEBBC572291BFEB00E315EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		2DEBBC742291BFEC00E315EA /* FlippFloppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlippFloppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEBBC782291BFEC00E315EA /* FlippFloppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippFloppUITests.swift; sourceTree = "<group>"; };
 		2DEBBC7A2291BFEC00E315EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A35223F76297DF9D293615F /* Pods-FlippFloppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlippFloppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlippFloppUITests/Pods-FlippFloppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6EDF590B35692F52D16D2BFE /* Pods-FlippFlopp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlippFlopp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlippFlopp/Pods-FlippFlopp.debug.xcconfig"; sourceTree = "<group>"; };
+		7DD1EB2F556288C1C15C2FA1 /* Pods-FlippFloppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlippFloppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlippFloppTests/Pods-FlippFloppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C66421E1488E095607A5BB05 /* Pods-FlippFlopp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlippFlopp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlippFlopp/Pods-FlippFlopp.release.xcconfig"; sourceTree = "<group>"; };
+		CB056BF26C003FB455A98CAA /* Pods-FlippFloppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlippFloppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlippFloppTests/Pods-FlippFloppTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB20B1D17814D6BA539A12D0 /* Pods_FlippFloppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlippFloppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0638BB62E90EE157B814745 /* Pods_FlippFlopp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlippFlopp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91A990A1428510EA9591E12 /* Pods_FlippFloppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlippFloppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEF7CB2CA947F9D4D7419AE /* Pods_FlippFlopp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8846E2F69BB9B3E820BC34 /* Pods_FlippFloppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E187E137E39B2C1CD04D33 /* Pods_FlippFloppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				2DEBBC6C2291BFEC00E315EA /* FlippFloppTests */,
 				2DEBBC772291BFEC00E315EA /* FlippFloppUITests */,
 				2DEBBC532291BFEB00E315EA /* Products */,
+				78EFBBC092DB4848F0CB8AF4 /* Pods */,
+				B48C313A325A61C61C370DEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = FlippFloppUITests;
 			sourceTree = "<group>";
 		};
+		78EFBBC092DB4848F0CB8AF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EDF590B35692F52D16D2BFE /* Pods-FlippFlopp.debug.xcconfig */,
+				C66421E1488E095607A5BB05 /* Pods-FlippFlopp.release.xcconfig */,
+				7DD1EB2F556288C1C15C2FA1 /* Pods-FlippFloppTests.debug.xcconfig */,
+				CB056BF26C003FB455A98CAA /* Pods-FlippFloppTests.release.xcconfig */,
+				1558E3BA854B86EC2C537250 /* Pods-FlippFloppUITests.debug.xcconfig */,
+				6A35223F76297DF9D293615F /* Pods-FlippFloppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B48C313A325A61C61C370DEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0638BB62E90EE157B814745 /* Pods_FlippFlopp.framework */,
+				F91A990A1428510EA9591E12 /* Pods_FlippFloppTests.framework */,
+				CB20B1D17814D6BA539A12D0 /* Pods_FlippFloppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DEBBC7D2291BFEC00E315EA /* Build configuration list for PBXNativeTarget "FlippFlopp" */;
 			buildPhases = (
+				7073817E2B76AAE1896B2B83 /* [CP] Check Pods Manifest.lock */,
 				2DEBBC4E2291BFEB00E315EA /* Sources */,
 				2DEBBC4F2291BFEB00E315EA /* Frameworks */,
 				2DEBBC502291BFEB00E315EA /* Resources */,
+				D1702E1EC2E1CFC71BA5757E /* [CP] Embed Pods Frameworks */,
+				A9D04047524A5DDF28C5F73B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DEBBC802291BFEC00E315EA /* Build configuration list for PBXNativeTarget "FlippFloppTests" */;
 			buildPhases = (
+				1573C2B62C923E808B8AA059 /* [CP] Check Pods Manifest.lock */,
 				2DEBBC652291BFEC00E315EA /* Sources */,
 				2DEBBC662291BFEC00E315EA /* Frameworks */,
 				2DEBBC672291BFEC00E315EA /* Resources */,
+				DD6133F572E76319758239F0 /* [CP] Embed Pods Frameworks */,
+				D93F9EAFFB9FB33551008B9A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DEBBC832291BFEC00E315EA /* Build configuration list for PBXNativeTarget "FlippFloppUITests" */;
 			buildPhases = (
+				5C5F26B9C320E817C5DBC68E /* [CP] Check Pods Manifest.lock */,
 				2DEBBC702291BFEC00E315EA /* Sources */,
 				2DEBBC712291BFEC00E315EA /* Frameworks */,
 				2DEBBC722291BFEC00E315EA /* Resources */,
+				03BAA67A57951FED05B64C1B /* [CP] Embed Pods Frameworks */,
+				D69772EDF4F9AF16034BA68B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,162 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03BAA67A57951FED05B64C1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlippFloppUITests/Pods-FlippFloppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1573C2B62C923E808B8AA059 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlippFloppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C5F26B9C320E817C5DBC68E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlippFloppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7073817E2B76AAE1896B2B83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlippFlopp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D04047524A5DDF28C5F73B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlippFlopp/Pods-FlippFlopp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1702E1EC2E1CFC71BA5757E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlippFlopp/Pods-FlippFlopp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlippFlopp/Pods-FlippFlopp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D69772EDF4F9AF16034BA68B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlippFloppUITests/Pods-FlippFloppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D93F9EAFFB9FB33551008B9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlippFloppTests/Pods-FlippFloppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD6133F572E76319758239F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlippFloppTests/Pods-FlippFloppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2DEBBC4E2291BFEB00E315EA /* Sources */ = {
@@ -434,15 +639,13 @@
 		};
 		2DEBBC7E2291BFEC00E315EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EDF590B35692F52D16D2BFE /* Pods-FlippFlopp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFlopp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFlopp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -452,15 +655,13 @@
 		};
 		2DEBBC7F2291BFEC00E315EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C66421E1488E095607A5BB05 /* Pods-FlippFlopp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFlopp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFlopp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -470,17 +671,14 @@
 		};
 		2DEBBC812291BFEC00E315EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD1EB2F556288C1C15C2FA1 /* Pods-FlippFloppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFloppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFloppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -491,17 +689,14 @@
 		};
 		2DEBBC822291BFEC00E315EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB056BF26C003FB455A98CAA /* Pods-FlippFloppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFloppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFloppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -512,16 +707,13 @@
 		};
 		2DEBBC842291BFEC00E315EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1558E3BA854B86EC2C537250 /* Pods-FlippFloppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFloppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFloppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -532,16 +724,13 @@
 		};
 		2DEBBC852291BFEC00E315EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A35223F76297DF9D293615F /* Pods-FlippFloppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFloppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFloppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
