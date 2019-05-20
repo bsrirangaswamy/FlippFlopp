@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D7A84F42291C42A00D6EF8B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A84F32291C42A00D6EF8B /* NetworkManager.swift */; };
+		2D7A84F52291C42A00D6EF8B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A84F32291C42A00D6EF8B /* NetworkManager.swift */; };
+		2D7A84F62291C42A00D6EF8B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A84F32291C42A00D6EF8B /* NetworkManager.swift */; };
+		2D7F48182291FCA60014ECC1 /* BookResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F48172291FCA60014ECC1 /* BookResults.swift */; };
+		2D7F48192291FCA60014ECC1 /* BookResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F48172291FCA60014ECC1 /* BookResults.swift */; };
+		2D7F481A2291FCA60014ECC1 /* BookResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F48172291FCA60014ECC1 /* BookResults.swift */; };
+		2D7F48202291FD100014ECC1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F481F2291FD100014ECC1 /* Book.swift */; };
+		2D7F48212291FD100014ECC1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F481F2291FD100014ECC1 /* Book.swift */; };
+		2D7F48222291FD100014ECC1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F481F2291FD100014ECC1 /* Book.swift */; };
+		2D7F4824229223FB0014ECC1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F4823229223FB0014ECC1 /* DataManager.swift */; };
+		2D7F4825229223FB0014ECC1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F4823229223FB0014ECC1 /* DataManager.swift */; };
+		2D7F4826229223FB0014ECC1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F4823229223FB0014ECC1 /* DataManager.swift */; };
 		2DEBBC562291BFEB00E315EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBBC552291BFEB00E315EA /* AppDelegate.swift */; };
 		2DEBBC582291BFEB00E315EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBBC572291BFEB00E315EA /* ViewController.swift */; };
 		2DEBBC5B2291BFEB00E315EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DEBBC592291BFEB00E315EA /* Main.storyboard */; };
@@ -39,6 +51,10 @@
 
 /* Begin PBXFileReference section */
 		1558E3BA854B86EC2C537250 /* Pods-FlippFloppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlippFloppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlippFloppUITests/Pods-FlippFloppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D7A84F32291C42A00D6EF8B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2D7F48172291FCA60014ECC1 /* BookResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResults.swift; sourceTree = "<group>"; };
+		2D7F481F2291FD100014ECC1 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		2D7F4823229223FB0014ECC1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		2DEBBC522291BFEB00E315EA /* FlippFlopp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlippFlopp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEBBC552291BFEB00E315EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DEBBC572291BFEB00E315EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +107,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D7A84F22291C40B00D6EF8B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A84F32291C42A00D6EF8B /* NetworkManager.swift */,
+				2D7F4823229223FB0014ECC1 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2D7F48162291FC0B0014ECC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D7F48172291FCA60014ECC1 /* BookResults.swift */,
+				2D7F481F2291FD100014ECC1 /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2DEBBC492291BFEB00E315EA = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +153,8 @@
 				2DEBBC552291BFEB00E315EA /* AppDelegate.swift */,
 				2DEBBC572291BFEB00E315EA /* ViewController.swift */,
 				2DEBBC592291BFEB00E315EA /* Main.storyboard */,
+				2D7A84F22291C40B00D6EF8B /* Managers */,
+				2D7F48162291FC0B0014ECC1 /* Models */,
 				2DEBBC5F2291BFEC00E315EA /* Assets.xcassets */,
 				2DEBBC612291BFEC00E315EA /* LaunchScreen.storyboard */,
 				2DEBBC642291BFEC00E315EA /* Info.plist */,
@@ -464,6 +500,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7F48182291FCA60014ECC1 /* BookResults.swift in Sources */,
+				2D7A84F42291C42A00D6EF8B /* NetworkManager.swift in Sources */,
+				2D7F48202291FD100014ECC1 /* Book.swift in Sources */,
+				2D7F4824229223FB0014ECC1 /* DataManager.swift in Sources */,
 				2DEBBC582291BFEB00E315EA /* ViewController.swift in Sources */,
 				2DEBBC5E2291BFEB00E315EA /* FlippFlopp.xcdatamodeld in Sources */,
 				2DEBBC562291BFEB00E315EA /* AppDelegate.swift in Sources */,
@@ -474,7 +514,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7F48212291FD100014ECC1 /* Book.swift in Sources */,
+				2D7F4825229223FB0014ECC1 /* DataManager.swift in Sources */,
+				2D7A84F52291C42A00D6EF8B /* NetworkManager.swift in Sources */,
 				2DEBBC6E2291BFEC00E315EA /* FlippFloppTests.swift in Sources */,
+				2D7F48192291FCA60014ECC1 /* BookResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +526,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7F48222291FD100014ECC1 /* Book.swift in Sources */,
+				2D7F4826229223FB0014ECC1 /* DataManager.swift in Sources */,
+				2D7A84F62291C42A00D6EF8B /* NetworkManager.swift in Sources */,
 				2DEBBC792291BFEC00E315EA /* FlippFloppUITests.swift in Sources */,
+				2D7F481A2291FCA60014ECC1 /* BookResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,7 +693,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFlopp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFlopp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -661,7 +712,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFlopp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFlopp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -678,7 +732,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFloppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFloppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -696,7 +754,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFloppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFloppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -713,7 +775,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFloppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFloppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -730,7 +796,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PXGQZP8AE;
 				INFOPLIST_FILE = FlippFloppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PriBa.FlippFloppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

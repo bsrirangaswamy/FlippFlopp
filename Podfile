@@ -6,8 +6,8 @@ target 'FlippFlopp' do
   use_frameworks!
 
   # Pods for FlippFlopp
-  pod 'Alamofire' 
-  pod 'AlamofireObjectMapper'
+  pod 'Alamofire', '~> 4.8.0’
+  pod 'AlamofireObjectMapper', '~> 5.2.0’
   pod 'SwiftyJSON'
 
   target 'FlippFloppTests' do
