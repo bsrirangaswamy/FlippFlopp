@@ -36,6 +36,9 @@ class Book: Mappable {
     var weeksOnList: Int?
     var bookImageWidth: Int?
     
+    //store image as data
+    var bookImageData: Data?
+    
     required init?(map: Map) {
         
     }

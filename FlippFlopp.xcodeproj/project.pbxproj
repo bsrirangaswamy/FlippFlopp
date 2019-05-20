@@ -19,6 +19,9 @@
 		2D7F4824229223FB0014ECC1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F4823229223FB0014ECC1 /* DataManager.swift */; };
 		2D7F4825229223FB0014ECC1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F4823229223FB0014ECC1 /* DataManager.swift */; };
 		2D7F4826229223FB0014ECC1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F4823229223FB0014ECC1 /* DataManager.swift */; };
+		2D7F482822922FDE0014ECC1 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F482722922FDE0014ECC1 /* BookTableViewCell.swift */; };
+		2D7F482922922FDE0014ECC1 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F482722922FDE0014ECC1 /* BookTableViewCell.swift */; };
+		2D7F482A22922FDE0014ECC1 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F482722922FDE0014ECC1 /* BookTableViewCell.swift */; };
 		2DEBBC562291BFEB00E315EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBBC552291BFEB00E315EA /* AppDelegate.swift */; };
 		2DEBBC582291BFEB00E315EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBBC572291BFEB00E315EA /* ViewController.swift */; };
 		2DEBBC5B2291BFEB00E315EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DEBBC592291BFEB00E315EA /* Main.storyboard */; };
@@ -55,6 +58,7 @@
 		2D7F48172291FCA60014ECC1 /* BookResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResults.swift; sourceTree = "<group>"; };
 		2D7F481F2291FD100014ECC1 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		2D7F4823229223FB0014ECC1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		2D7F482722922FDE0014ECC1 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		2DEBBC522291BFEB00E315EA /* FlippFlopp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlippFlopp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEBBC552291BFEB00E315EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DEBBC572291BFEB00E315EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 			children = (
 				2DEBBC552291BFEB00E315EA /* AppDelegate.swift */,
 				2DEBBC572291BFEB00E315EA /* ViewController.swift */,
+				2D7F482722922FDE0014ECC1 /* BookTableViewCell.swift */,
 				2DEBBC592291BFEB00E315EA /* Main.storyboard */,
 				2D7A84F22291C40B00D6EF8B /* Managers */,
 				2D7F48162291FC0B0014ECC1 /* Models */,
@@ -500,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7F482822922FDE0014ECC1 /* BookTableViewCell.swift in Sources */,
 				2D7F48182291FCA60014ECC1 /* BookResults.swift in Sources */,
 				2D7A84F42291C42A00D6EF8B /* NetworkManager.swift in Sources */,
 				2D7F48202291FD100014ECC1 /* Book.swift in Sources */,
@@ -518,6 +524,7 @@
 				2D7F4825229223FB0014ECC1 /* DataManager.swift in Sources */,
 				2D7A84F52291C42A00D6EF8B /* NetworkManager.swift in Sources */,
 				2DEBBC6E2291BFEC00E315EA /* FlippFloppTests.swift in Sources */,
+				2D7F482922922FDE0014ECC1 /* BookTableViewCell.swift in Sources */,
 				2D7F48192291FCA60014ECC1 /* BookResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +537,7 @@
 				2D7F4826229223FB0014ECC1 /* DataManager.swift in Sources */,
 				2D7A84F62291C42A00D6EF8B /* NetworkManager.swift in Sources */,
 				2DEBBC792291BFEC00E315EA /* FlippFloppUITests.swift in Sources */,
+				2D7F482A22922FDE0014ECC1 /* BookTableViewCell.swift in Sources */,
 				2D7F481A2291FCA60014ECC1 /* BookResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

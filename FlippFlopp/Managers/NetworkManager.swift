@@ -41,8 +41,8 @@ class NetworkManager: NSObject {
                 do {
                     let jsonValue = try JSON(data: data)
                     DataManager.sharedInstance.bestSellerResults = Mapper<BookResults>().map(JSONObject: jsonValue["results"].rawValue)
-                    print("Bala json Data: \(jsonValue))")
-                    print("Bala json Data mapped \(jsonValue["results"].rawValue))")
+//                    print("Bala json Data: \(jsonValue))")
+//                    print("Bala json Data mapped \(jsonValue["results"].rawValue))")
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: bestSellerBooksFetchedNotification), object: self)
 
                 } catch {
