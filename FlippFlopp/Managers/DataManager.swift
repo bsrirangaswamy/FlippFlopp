@@ -12,5 +12,9 @@ class DataManager: NSObject {
     
     static let sharedInstance = DataManager()
     var bestSellerResults: BookResults?
+    
+    func updateStorage() {
+        PersistenceManager.sharedInstance.fetchAndUpdateData(updateResults: bestSellerResults)
+    }
 
 }

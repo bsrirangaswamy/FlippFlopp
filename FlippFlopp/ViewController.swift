@@ -13,26 +13,52 @@ class ViewController: UIViewController {
     @IBOutlet weak var booksTableView: UITableView!
     var detailBook: Book?
     
+    private let refrshControl = UIRefreshControl()
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Set Navigation Bar Title
+        // Set Navigation Bar Title
         self.title = "FlippFlopp"
         
-        // Set up notification Observer
-        NotificationCenter.default.addObserver(self, selector: #selector(self.dataMapped), name: NSNotification.Name(rawValue: bestSellerBooksFetchedNotification), object: nil)
+        // Setup refresh control for tableview
+        if #available(iOS 10.0, *) {
+            booksTableView.refreshControl = refrshControl
+        } else {
+            booksTableView.addSubview(refrshControl)
+        }
         
-        NetworkManager.sharedInstance.executeRequest(urlString: NetworkCommands.listData.rawValue, isbn: nil, author: nil)
+        // Set up notification Observer
+        NotificationCenter.default.addObserver(self, selector: #selector(self.loadTableViewData), name: NSNotification.Name(rawValue: bestSellerBooksFetchedNotification), object: nil)
+        
+        if PersistenceManager.sharedInstance.retrieveStoredData() {
+            loadTableViewData()
+        } else {
+            NetworkManager.sharedInstance.executeRequest(urlString: NetworkCommands.listData.rawValue, isbn: nil, author: nil)
+        }
+        
+        // Configure refresh control
+        refrshControl.addTarget(self, action: #selector(self.refreshTableView), for: .valueChanged)
+        refrshControl.attributedTitle = NSAttributedString(string: "Refreshing bestseller list...", attributes: nil)
     }
     
-    @objc func dataMapped() {
+    func reloadTableViewData() {
+        booksTableView.reloadData()
+        DataManager.sharedInstance.updateStorage()
+    }
+    
+    @objc func loadTableViewData() {
         if let bookResults = DataManager.sharedInstance.bestSellerResults, let booksArray = bookResults.books {
-            print("Bala books array = \(booksArray[0].title)")
-            booksTableView.reloadData()
+            reloadTableViewData()
+            self.refrshControl.endRefreshing()
         }
+    }
+    
+    @objc func refreshTableView() {
+        NetworkManager.sharedInstance.executeRequest(urlString: NetworkCommands.listData.rawValue, isbn: nil, author: nil)
     }
 
 }
@@ -72,6 +98,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            DataManager.sharedInstance.bestSellerResults?.books?.remove(at: indexPath.row)
+            reloadTableViewData()
+        }
+    }
+    
     func getDataFromImageURL(urlString: String) -> Data? {
         var imageData: Data?
         if let url = URL(string: urlString) {
@@ -85,7 +122,6 @@ extension ViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "bookDetailSegue", let booksDetailController = segue.destination as? BooksDetailViewController {
             booksDetailController.bookObj = detailBook
-            print("Bala sent appropriate book to detail")
         }
     }
 }
