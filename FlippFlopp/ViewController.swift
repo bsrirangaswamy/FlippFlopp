@@ -24,6 +24,9 @@ class ViewController: UIViewController {
         // Set Navigation Bar Title
         self.title = "FlippFlopp"
         
+        // Hide tableview before retrieving data
+        self.booksTableView.isHidden = true
+        
         // Setup refresh control for tableview
         if #available(iOS 10.0, *) {
             booksTableView.refreshControl = refrshControl
@@ -47,6 +50,7 @@ class ViewController: UIViewController {
     
     func reloadTableViewData() {
         booksTableView.reloadData()
+        booksTableView.isHidden = false
         DataManager.sharedInstance.updateStorage()
     }
     
