@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var booksTableView: UITableView!
+    var detailBook: Book?
     
     deinit {
         NotificationCenter.default.removeObserver(self)
@@ -18,6 +19,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Set Navigation Bar Title
+        self.title = "FlippFlopp"
+        
         // Set up notification Observer
         NotificationCenter.default.addObserver(self, selector: #selector(self.dataMapped), name: NSNotification.Name(rawValue: bestSellerBooksFetchedNotification), object: nil)
         
@@ -58,12 +62,31 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return bookCell
     }
     
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        detailBook = DataManager.sharedInstance.bestSellerResults?.books?[indexPath.row]
+        return indexPath
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        detailBook = DataManager.sharedInstance.bestSellerResults?.books?[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     func getDataFromImageURL(urlString: String) -> Data? {
         var imageData: Data?
         if let url = URL(string: urlString) {
             imageData = try? Data(contentsOf: url)
         }
         return imageData
+    }
+}
+
+extension ViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "bookDetailSegue", let booksDetailController = segue.destination as? BooksDetailViewController {
+            booksDetailController.bookObj = detailBook
+            print("Bala sent appropriate book to detail")
+        }
     }
 }
 
