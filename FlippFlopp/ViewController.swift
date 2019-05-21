@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Set Navigation Bar Title
-        self.title = "FlippFlopp"
+        self.title = "kFlippFlopp".localized
         
         // Hide tableview before retrieving data
         self.booksTableView.isHidden = true
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         
         // Configure refresh control
         refrshControl.addTarget(self, action: #selector(self.refreshTableView), for: .valueChanged)
-        refrshControl.attributedTitle = NSAttributedString(string: "Refreshing bestseller list...", attributes: nil)
+        refrshControl.attributedTitle = NSAttributedString(string: "kRefreshingBestSellerList".localized, attributes: nil)
     }
     
     func reloadTableViewData() {
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     }
     
     @objc func loadTableViewData() {
-        if let bookResults = DataManager.sharedInstance.bestSellerResults, let booksArray = bookResults.books {
+        if let bookResults = DataManager.sharedInstance.bestSellerResults, let _ = bookResults.books {
             reloadTableViewData()
             self.refrshControl.endRefreshing()
         }
@@ -127,6 +127,12 @@ extension ViewController {
         if segue.identifier == "bookDetailSegue", let booksDetailController = segue.destination as? BooksDetailViewController {
             booksDetailController.bookObj = detailBook
         }
+    }
+}
+
+extension String {
+    public var localized: String {
+        return NSLocalizedString(self, comment: "")
     }
 }
 

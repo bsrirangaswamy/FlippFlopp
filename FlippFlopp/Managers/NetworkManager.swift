@@ -24,15 +24,9 @@ class NetworkManager: NSObject {
     static let sharedInstance = NetworkManager()
     
     func executeRequest(urlString: String, isbn: Int?, author: String?) {
-        var createURLString = getBaseAPI() + urlString
-        if let isbnValue = isbn {
-            createURLString = createURLString + "\(isbnValue)" + "&"
-        } else if let authorValue = author {
-            createURLString = createURLString + authorValue + "&"
-        }
+        let createURLString = getBaseAPI() + urlString + "api-key=" + getAPIKey()
         
-        createURLString = createURLString + "api-key=" + getAPIKey()
-        print("Bala request string = \(createURLString)")
+        print("Request string = \(createURLString)")
         
         Alamofire.request(createURLString)
             .validate()
@@ -45,7 +39,7 @@ class NetworkManager: NSObject {
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: bestSellerBooksFetchedNotification), object: self)
 
                 } catch {
-                    print("Bala JSON fetch error = \(error.localizedDescription)")
+                    print("JSON fetch error = \(error.localizedDescription)")
                 }
             }
         }
@@ -56,7 +50,7 @@ class NetworkManager: NSObject {
     }
     
     private func getAPIKey() -> String {
-        return "qgUxPjlyDtMZzFYBOsAf4SrwvQXXIBGh"
+        return "kApiKey".localized
     }
 
 }

@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  FlippFlopp
+
+  Created by Balakumaran Srirangaswamy on 5/21/19.
+  Copyright © 2019 Bala. All rights reserved.
+*/
+
+"kOk" = "Ok";
+"kFlippFlopp" = "FlippFlopp";
+"kRefreshingBestSellerList" = "Refreshing bestseller list...";
+"kBookInfo" = "Book Information";
+"kTitle" = "Title: ";
+"kBestSellerRank" = "Best Seller Rank: ";
+"kAuthor" = "Author: ";
+"kPublisher" = "Publisher: ";
+"kNumberOfWeeks" = "Number of weeks: ";
+"kSynopsis" = "Synopsis: ";
+"kApiKey" = "qgUxPjlyDtMZzFYBOsAf4SrwvQXXIBGh";

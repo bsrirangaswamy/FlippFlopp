@@ -32,6 +32,9 @@
 		2DDF0CA62294324000745BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBBC552291BFEB00E315EA /* AppDelegate.swift */; };
 		2DDF0CA72294324300745BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBBC572291BFEB00E315EA /* ViewController.swift */; };
 		2DDF0CA82294324400745BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBBC572291BFEB00E315EA /* ViewController.swift */; };
+		2DDF0CB022944B4B00745BED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DDF0CAF22944B4B00745BED /* Localizable.strings */; };
+		2DDF0CB122944B4B00745BED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DDF0CAF22944B4B00745BED /* Localizable.strings */; };
+		2DDF0CB222944B4B00745BED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DDF0CAF22944B4B00745BED /* Localizable.strings */; };
 		2DEBBC562291BFEB00E315EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBBC552291BFEB00E315EA /* AppDelegate.swift */; };
 		2DEBBC582291BFEB00E315EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBBC572291BFEB00E315EA /* ViewController.swift */; };
 		2DEBBC5B2291BFEB00E315EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DEBBC592291BFEB00E315EA /* Main.storyboard */; };
@@ -71,6 +74,7 @@
 		2D7F482722922FDE0014ECC1 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		2DA97DF72292E7B900E8CF11 /* BooksDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksDetailViewController.swift; sourceTree = "<group>"; };
 		2DA97DFB2293153F00E8CF11 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		2DDF0CAF22944B4B00745BED /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2DEBBC522291BFEB00E315EA /* FlippFlopp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlippFlopp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEBBC552291BFEB00E315EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DEBBC572291BFEB00E315EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 				2D7A84F22291C40B00D6EF8B /* Managers */,
 				2D7F48162291FC0B0014ECC1 /* Models */,
 				2DEBBC5F2291BFEC00E315EA /* Assets.xcassets */,
+				2DDF0CAF22944B4B00745BED /* Localizable.strings */,
 				2DEBBC612291BFEC00E315EA /* LaunchScreen.storyboard */,
 				2DEBBC642291BFEC00E315EA /* Info.plist */,
 				2DEBBC5C2291BFEB00E315EA /* FlippFlopp.xcdatamodeld */,
@@ -337,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DEBBC632291BFEC00E315EA /* LaunchScreen.storyboard in Resources */,
+				2DDF0CB022944B4B00745BED /* Localizable.strings in Resources */,
 				2DEBBC602291BFEC00E315EA /* Assets.xcassets in Resources */,
 				2DEBBC5B2291BFEB00E315EA /* Main.storyboard in Resources */,
 			);
@@ -346,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DDF0CB122944B4B00745BED /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DDF0CB222944B4B00745BED /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

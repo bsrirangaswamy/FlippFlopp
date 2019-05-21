@@ -25,7 +25,7 @@ class PersistenceManager: NSObject {
         do {
             try managedContextForStorage.save()
         } catch let error as NSError {
-            print("Bala Save failed; error = \(error), description = \(error.userInfo)")
+            print("Save failed; error = \(error), description = \(error.userInfo)")
         }
     }
     
@@ -51,7 +51,7 @@ class PersistenceManager: NSObject {
                 }
             }
         } catch let error as NSError {
-            print("Bala Fetch failed; error = \(error), description = \(error.userInfo)")
+            print("Fetch failed; error = \(error), description = \(error.userInfo)")
         }
         return fetchedString
     }

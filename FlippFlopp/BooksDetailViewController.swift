@@ -22,15 +22,15 @@ class BooksDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Set Navigation Bar Title
-        self.title = "Book Information"
+        self.title = "kBookInfo".localized
         
         if let bookRef = bookObj {
-            titleLabel.text = "Title: " + String(bookRef.title ?? "")
-            bestSellerRankLabel.text = "Best Seller Rank: " + String(bookRef.rank ?? 0)
-            authorLabel.text = "Author: " + String(bookRef.author ?? "")
-            publisherLabel.text = "Publisher: " + String(bookRef.publisher ?? "")
-            weeksOnListLabel.text = "Number of weeks: " + String(bookRef.weeksOnList ?? 1)
-            synopsisLabel.text = "Synopsis: " + String(bookRef.description ?? "")
+            titleLabel.text = "kTitle".localized + String(bookRef.title ?? "")
+            bestSellerRankLabel.text = "kBestSellerRank".localized + String(bookRef.rank ?? 0)
+            authorLabel.text = "kAuthor".localized + String(bookRef.author ?? "")
+            publisherLabel.text = "kPublisher".localized + String(bookRef.publisher ?? "")
+            weeksOnListLabel.text = "kNumberOfWeeks".localized + String(bookRef.weeksOnList ?? 1)
+            synopsisLabel.text = "kSynopsis".localized + String(bookRef.description ?? "")
             if let imageData = bookRef.bookImageData {
                 bookImageView.image = UIImage(data: imageData)
             }
