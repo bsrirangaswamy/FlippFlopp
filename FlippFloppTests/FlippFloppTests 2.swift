@@ -22,7 +22,7 @@ class FlippFloppTests: XCTestCase {
     }
 
     func testBookResultsMapper() {
-        let jsonDict: [String: Any] = ["list_name_encoded": "hardcover-fiction", "updated": "WEEKLY", "status": "OK", "num_results": 7]
+        let jsonDict: [String: Any] = ["list_name_encoded": "hardcover-fiction", "updated": "WEEKLY", "status": "OK", "numResults": 7]
         
         let testBookResults = Mapper<BookResults>().map(JSON: jsonDict)
         

@@ -22,7 +22,7 @@ class BookResults: Mappable {
     var nextPublishedDate: String?
     var books: [Book]?
     var status: String?
-    var numResults: String?
+    var numResults: Int?
     var lastModified: String?
     
     required init?(map: Map) {
