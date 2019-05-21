@@ -41,7 +41,7 @@ class NetworkManager: NSObject {
                 do {
                     let jsonValue = try JSON(data: data)
                     DataManager.sharedInstance.bestSellerResults = Mapper<BookResults>().map(JSONObject: jsonValue["results"].rawValue)
-                    PersistenceManager.sharedInstance.saveData(persistResults: DataManager.sharedInstance.bestSellerResults)
+                    DataManager.sharedInstance.saveStorage()
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: bestSellerBooksFetchedNotification), object: self)
 
                 } catch {

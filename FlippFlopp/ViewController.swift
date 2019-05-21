@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         // Set up notification Observer
         NotificationCenter.default.addObserver(self, selector: #selector(self.loadTableViewData), name: NSNotification.Name(rawValue: bestSellerBooksFetchedNotification), object: nil)
         
-        if PersistenceManager.sharedInstance.retrieveStoredData() {
+        if DataManager.sharedInstance.retrieveStoredData() {
             loadTableViewData()
         } else {
             NetworkManager.sharedInstance.executeRequest(urlString: NetworkCommands.listData.rawValue, isbn: nil, author: nil)

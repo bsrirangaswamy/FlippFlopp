@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import ObjectMapper
 import CoreData
+import ObjectMapper
 
 class PersistenceManager: NSObject {
     
@@ -54,15 +54,6 @@ class PersistenceManager: NSObject {
             print("Bala Fetch failed; error = \(error), description = \(error.userInfo)")
         }
         return fetchedString
-    }
-    
-    func retrieveStoredData() -> Bool {
-        var isRetrieved = false
-        if let jsonString = fetchAndUpdateData(updateResults: nil) {
-            DataManager.sharedInstance.bestSellerResults = Mapper<BookResults>().map(JSONString: jsonString)
-            isRetrieved = true
-        }
-        return isRetrieved
     }
     
     private func convertDataToJSONString(bookResults: BookResults?) -> String? {
