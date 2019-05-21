@@ -12,7 +12,7 @@ import ObjectMapper
 class Book: Mappable {
     var amazonProductUurl: String?
     var ISBNs: [ISBN]?
-    var primaryISBN10: Int?
+    var primaryISBN10: String?
     var contributorNote: String?
     var author: String?
     var sundayReviewLink: String?
