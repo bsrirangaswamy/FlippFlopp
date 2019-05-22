@@ -85,7 +85,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             if let imageData = currentBook.bookImageData {
                 bookCell.bookImageView.image = UIImage(data: imageData)
             } else if let imageURLString = currentBook.bookImage, let newImageData = getDataFromImageURL(urlString: imageURLString) {
-                DataManager.sharedInstance.bestSellerResults?.books?[indexPath.row].bookImageData = newImageData
+                currentBook.bookImageData = newImageData
                 bookCell.bookImageView.image = UIImage(data: newImageData)
             }
         }
